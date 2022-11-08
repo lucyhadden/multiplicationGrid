@@ -28,27 +28,6 @@ length of the grid and the number of multiple occourances for each row
 *@return multiplicationGrid - function returns a multiplication grid that
 increments by one until gridsize is reached
  */
-
-// export const createMultiplicationGrid = (gridSize: number) => {
-//   var s = ``;
-
-//   let max_len = (gridSize * gridSize).toString().length;
-
-//   for (let i = 1; i <= gridSize; i++) {
-//     for (let j = 1; j <= gridSize; j++) {
-//       let n = (i * (j + 1)).toString().length - 1;
-//       let pad = max_len - n;
-
-//       s += " ".repeat(pad) + `${i * j}` + " ".repeat(pad); //add pad
-//       // in case of non-padded numbers uncomment line below
-//       //s+=` ${i * j} `;
-//     }
-//     s = s.trim() + "\n";
-//   }
-
-//   return s.trim();
-// };
-
 export const createMultiplicationGrid = (gridSize: number) => {
   var s = ``;
 
@@ -61,10 +40,8 @@ export const createMultiplicationGrid = (gridSize: number) => {
       let pad = max_len - n;
 
       s += `${i * j}` + " ".repeat(pad); //add pad
-      // in case of non-padded numbers uncomment line below
-      //s+=` ${i * j} `;
     }
-    s = s.trim() + "\n";
+    s = s.replace(/\s+$/, "") + "\n";
   }
-  return s.trim();
+  return s.replace(/\s+$/, "");
 };
