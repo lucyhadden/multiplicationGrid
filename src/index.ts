@@ -18,19 +18,8 @@
  */
 
 /**
- * Try and get as far as you can towards a solution. We are interested in
- * your problem-solving process, not necessarily the final result. 
-
- * @note Use the export and its name below as your starting point. It is
- * hooked up to a set of tests so you can track your progress towards the
- * final solution 😊
- * 
- * To view the testing panel click on the [Tests] tab in the right pane (next
- * to [Browser]).
- *
- * Good Luck, Have Fun 👍
+Test comment
  */
-
 export const createMultiplicationGrid = (gridSize: number) => {
   var s = ``;
 
